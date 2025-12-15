@@ -13,57 +13,6 @@
 
 <body>
   <div class="container-fluid py-4">
-    <div id="trainingPopup" class="popup-overlay">
-      <div class="popup-box">
-        <span class="popup-close">&times;</span>
-        <div class="h-25 w-100 ps-5 d-flex justify-content-center row g-5">
-          <div class="col-4 d-flex align-items-center"><a class="w-100" href=""><button
-                class="w-75 btn service-btn">Data Validation</button></a></div>
-          <div class="col-4 d-flex align-items-center"><a class="w-100" href=""><button
-                class="w-75 btn service-btn">Planning</button></a></div>
-          <div class="col-4 d-flex align-items-center"><a class="w-100" href=""><button
-                class="w-75 btn service-btn">Design</button></a></div>
-          <div class="col-4 d-flex align-items-center"><a class="w-100" href=""><button
-                class="w-75 btn service-btn">Splicing</button></a></div>
-          <div class="col-4 d-flex align-items-center"><a class="w-100" href=""><button
-                class="w-75 btn service-btn">Build Of Materials</button></a></div>
-        </div>
-      </div>
-    </div>
-    <div id="userdetailsPopup" class="popup-overlay">
-      <div class="popup-box">
-        <span class="popup-close">&times;</span>
-        <table>
-          <thead>
-            <tr>
-              <th>Employee Name</th>
-              <th>User name</th>
-              <th>Password from Metronet</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>/Hanumanth B</td><td class="copy username">vndurajak</td><td class="copy password">w!ndyBell70</td></tr>
-            <tr><td>Siva Ramakrishna K/ Ramakrishna G</td><td class="copy username">vndpprana</td><td class="copy password">$picyDust15</td></tr>
-            <tr><td>Rajyalakshmi M/Suresh Y</td><td class="copy username">vndgsurya</td><td class="copy password">@ngryNight22</td></tr>
-            <tr><td>Dhanalakshmi C/Prem M</td><td class="copy username">vndsajay</td><td class="copy password">pin&lt;Soup39</td></tr>
-            <tr><td>Sumalatha B/Mukesh M</td><td class="copy username">vndvpavan</td><td class="copy password">it(hyPump57</td></tr>
-            <tr><td>/Gopaiah U</td><td class="copy username">vndugopai</td><td class="copy password">&lt;eenSpoon13</td></tr>
-            <tr><td>Premchand B/Deepak V</td><td class="copy username">vndggovar</td><td class="copy password">limeBric&lt;60</td></tr>
-            <tr><td>Mahesh N/Bhaskar D</td><td class="copy username">vndpsrinu</td><td class="copy password">!cyHare54</td></tr>
-            <tr><td>/Abeer G</td><td class="copy username">vndkhari</td><td class="copy password">blu3Bull27</td></tr>
-            <tr><td>Vijayasandhya B/Madhu Venkata P</td><td class="copy username">vndesamb</td><td class="copy password">slowLoc&lt;34</td></tr>
-            <tr><td>Lavanya N/Shanmukh C</td><td class="copy username">vndbanan</td><td class="copy password">longSong19</td></tr>
-            <tr><td>Srisha J/Naveen M</td><td class="copy username">vndjsiri</td><td class="copy password">mis+yParrot75</td></tr>
-            <tr><td>Sweetha P/Vijay Narendra P</td><td class="copy username">vndmshsu</td><td class="copy password">newRo$e12</td></tr>
-            <tr><td>Suneetha C/Sathya Sai G</td><td class="copy username">vndksuni</td><td class="copy password">stackRelax88@</td></tr>
-            <tr><td>Bhavani Likitha Y/Vijay J</td><td class="copy username">vndpyesu</td><td class="copy password">muralStock58$</td></tr>
-            <tr><td>/Saikiran T</td><td class="copy username">vndmhyma</td><td class="copy password">smallWav354</td></tr>
-          </tbody>
-        </table>
-        <div id="popup" class="popup"></div>
-      </div>
-    </div>
-
     <div class="row">
       <div class="text-center col-12">
         <div><img alt="Centillion Networks" class="mb-4 logo"
@@ -102,7 +51,8 @@
                   Links</button></a></div>
             <div class="col-3"><button id="showTrainingPopupBtn" class="w-100 btn service-btn">Training
                 Documents</button></div>
-            <div class="col-3"><button class="w-100 btn service-btn">System Allotment</button></div>
+            <div class="col-3"><button id="showSystemdetailsPopupBtn" class="w-100 btn service-btn">System
+                Allotment</button></div>
             <div class="col-3"><button class="w-100 btn service-btn">Shift Timings</button></div>
             <div class="col-3"><button class="w-100 btn service-btn">Attendence</button></div>
           </div>
@@ -182,8 +132,333 @@
       </div>
     </div>
   </div>
+  <div id="trainingPopup" class="popup-overlay service-card">
+    <div class="popup-box">
+      <span class="popup-close">&times;</span>
+      <div class="h-25 w-100 ps-5 d-flex justify-content-center row g-5">
+        <div class="col-4 d-flex align-items-center"><a class="w-100" href=""><button class="w-75 btn service-btn">Data
+              Validation</button></a></div>
+        <div class="col-4 d-flex align-items-center"><a class="w-100" href=""><button
+              class="w-75 btn service-btn">Planning</button></a></div>
+        <div class="col-4 d-flex align-items-center"><a class="w-100" href=""><button
+              class="w-75 btn service-btn">Design</button></a></div>
+        <div class="col-4 d-flex align-items-center"><a class="w-100" href=""><button
+              class="w-75 btn service-btn">Splicing</button></a></div>
+        <div class="col-4 d-flex align-items-center"><a class="w-100" href=""><button class="w-75 btn service-btn">Build
+              Of Materials</button></a></div>
+      </div>
+    </div>
+  </div>
+  <div id="userdetailsPopup" class="popup-overlay service-card">
+    <div class="popup-box">
+      <span class="popup-close">&times;</span>
+      <table>
+        <thead>
+          <tr>
+            <th>Employee Name</th>
+            <th>User name</th>
+            <th>Password from Metronet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>/Hanumanth B</td>
+            <td class="copy username">vndurajak</td>
+            <td class="copy password">w!ndyBell70</td>
+          </tr>
+          <tr>
+            <td>Siva Ramakrishna K/ Ramakrishna G</td>
+            <td class="copy username">vndpprana</td>
+            <td class="copy password">$picyDust15</td>
+          </tr>
+          <tr>
+            <td>Rajyalakshmi M/Suresh Y</td>
+            <td class="copy username">vndgsurya</td>
+            <td class="copy password">@ngryNight22</td>
+          </tr>
+          <tr>
+            <td>Dhanalakshmi C/Prem M</td>
+            <td class="copy username">vndsajay</td>
+            <td class="copy password">pin&lt;Soup39</td>
+          </tr>
+          <tr>
+            <td>Sumalatha B/Mukesh M</td>
+            <td class="copy username">vndvpavan</td>
+            <td class="copy password">it(hyPump57</td>
+          </tr>
+          <tr>
+            <td>/Gopaiah U</td>
+            <td class="copy username">vndugopai</td>
+            <td class="copy password">&lt;eenSpoon13</td>
+          </tr>
+          <tr>
+            <td>Premchand B/Deepak V</td>
+            <td class="copy username">vndggovar</td>
+            <td class="copy password">limeBric&lt;60</td>
+          </tr>
+          <tr>
+            <td>Mahesh N/Bhaskar D</td>
+            <td class="copy username">vndpsrinu</td>
+            <td class="copy password">!cyHare54</td>
+          </tr>
+          <tr>
+            <td>/Abeer G</td>
+            <td class="copy username">vndkhari</td>
+            <td class="copy password">blu3Bull27</td>
+          </tr>
+          <tr>
+            <td>Vijayasandhya B/Madhu Venkata P</td>
+            <td class="copy username">vndesamb</td>
+            <td class="copy password">slowLoc&lt;34</td>
+          </tr>
+          <tr>
+            <td>Lavanya N/Shanmukh C</td>
+            <td class="copy username">vndbanan</td>
+            <td class="copy password">longSong19</td>
+          </tr>
+          <tr>
+            <td>Srisha J/Naveen M</td>
+            <td class="copy username">vndjsiri</td>
+            <td class="copy password">mis+yParrot75</td>
+          </tr>
+          <tr>
+            <td>Sweetha P/Vijay Narendra P</td>
+            <td class="copy username">vndmshsu</td>
+            <td class="copy password">newRo$e12</td>
+          </tr>
+          <tr>
+            <td>Suneetha C/Sathya Sai G</td>
+            <td class="copy username">vndksuni</td>
+            <td class="copy password">stackRelax88@</td>
+          </tr>
+          <tr>
+            <td>Bhavani Likitha Y/Vijay J</td>
+            <td class="copy username">vndpyesu</td>
+            <td class="copy password">muralStock58$</td>
+          </tr>
+          <tr>
+            <td>/Saikiran T</td>
+            <td class="copy username">vndmhyma</td>
+            <td class="copy password">smallWav354</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="popup" class="popup"></div>
+    </div>
+  </div>
+  <div id="systemdetailsPopup" class="popup-overlay service-card h-100 w-100">
+    <div class=" container-fluid h-100 w-100 border border-3 rounded position-relative overflow-auto">
+      <!-- Doors -->
+      <div class="position-absolute top-0 end-0"><span class="popup-close me-3">&times;</span>
+      </div>
+      <button id="downloadReport" class="btn btn-primary mt-3">
+        Download Report
+      </button>
+      <!-- Password input -->
+      <div class="mb-3">
+        <input type="password" id="uploadPassword" class="form-control" placeholder="Enter password to unlock upload">
+      </div>
+      <!-- File input (disabled until password is correct) -->
+      <div class="mb-3">
+        <input type="file" id="uploadCSV" class="form-control" accept=".csv" disabled>
+      </div>
+      <div id="activeShift" class="alert alert-info mt-3"></div>
 
+      <div class="position-absolute top-10 fw-bold bg-info px-2 py-1 rounded">Rest room
+      </div>
+      <div class="position-absolute bottom-0 end-0 adujest fw-bold px-2 py-1 rounded">Main door
+      </div>
+      <!-- Desk layout -->
+      <div class="container-fluid mt-4">
+        <!-- Row Pair 1: Row 1 + Row 2 -->
+        <div class="mb-4">
+          <div class="row mb-2">
+            <!-- Row 1: Desk 01–09 -->
+            <div class="col-1"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm col-1" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+          </div>
+          <div class="row">
+            <!-- Row 2: Desk 10–18 -->
+            <div class="col-1"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div class="row mb-2">
+            <!-- Row 1: Desk 19–27 -->
+            <div class="col-1"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+          </div>
+          <div class="row">
+            <!-- Row 2: Desk 28–36 -->
+            <div class="col-1"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div class="row mb-2">
+            <!-- Row 1: Desk 37–45 -->
+            <div class="col-1"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+          </div>
+          <div class="row">
+            <!-- Row 2: Desk 46–54 -->
+            <div class="col-1"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div class="row mb-2">
+            <!-- Row 1: Desk 55–63 -->
+            <div class="col-1"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row1 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+          </div>
+          <div class="row">
+            <!-- Row 2: Desk 64–72 -->
+            <div class="col-1"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+            <div class="col-1 desk-row2 d-flex flex-column align-items-center"><input
+                class="form-control form-control-sm" placeholder="Enter user"></div>
+          </div>
+        </div>
+      </div>
 
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
